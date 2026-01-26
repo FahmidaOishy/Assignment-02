@@ -1,0 +1,92 @@
+
+header{
+    background-color: #412567;
+    width: 100%;
+}
+.text-white{
+    color: white ;
+}
+.text-green{
+    color: #00FF88;
+    background-color: transparent;
+    border: 1px solid #00FF88;
+   
+}
+
+.gradient {
+    background: linear-gradient(to top,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bg-gradient{
+    background: var(--Linear, linear-gradient(to right, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .menu a{
+     text-decoration: none;
+        padding-left: 32px;
+     font-size: 16px;
+     font-weight: 500;
+}
+
+button{
+    padding: 12px 16px;
+    border-radius: 10000px;
+    border: none;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 101px;
+    background-image: url("../B13-A02-TechWave/assets/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+.banner .image{
+    position: relative;
+    box-sizing: border-box;
+    border: 8px solid rgb(22, 11, 65);
+
+}
+
+.bottom {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px; 
+  z-index: 2;
+}
+.banner-container {
+    text-align: center;
+}
+.banner-container .content h2{
+    font-size: 3.75rem;
+    font-weight: bolder;
+    margin: 0 auto;
+
+}
+.banner-container .content p{
+    font-size: 1rem;
+    padding-bottom: 24px;
+}
+.banner-container .button {
+    padding: 12px 20px;
+    gap:8px;
+    font-size: 16px;
+    font-weight: 600;
+}
