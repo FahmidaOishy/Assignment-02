@@ -1,3 +1,6 @@
+*{
+    margin: 0 auto;
+}
 
 header{
     background-color: #412567;
@@ -90,3 +93,104 @@ button{
     font-size: 16px;
     font-weight: 600;
 }
+.about{
+    background-color: #1A0B2E;
+    text-align: center;
+    
+}
+.about-info{
+    max-width: 75rem;
+}
+.about-info h2{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 3.125rem;
+}
+.about-info p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+.about .statistics {
+    display: flex;
+    justify-content: space-between;
+    max-width: 75rem;
+}
+.about .statistics .amount{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #00FF88;
+}
+.about .statistics .name{
+    font-size: 1rem;
+    padding-top: 1.25rem;
+    padding-bottom: 7.5rem;
+}
+.choose{
+    background-color: #230E3D;
+    padding: 120px 200px 120px 200px;
+    text-align: center;
+}
+.choose-info{
+    max-width: 1170px;
+    height: 780px;
+}
+.choose-title{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 40px;
+
+}
+.card-info{
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    text-align: left;
+}
+.audio{
+    grid-area: audio;
+   width: 380px;
+  
+}
+.device{
+    grid-area: device;
+   width: 790px;
+}
+.global{
+    grid-area: global;
+    width: 790px;
+}
+.interviews{
+    grid-area: interviews;
+    width: 790px;
+}
+.resources{
+    grid-area: resources;
+   width: 380px;
+}
+.choose-card{
+    display: grid;
+
+  grid-template-areas: 
+  "audio device device"
+  "audio global global"
+  "interviews interviews resources";
+  gap: 30px;
+}
+.card-info h3{
+    font-size: 1.50rem;
+    font-weight: bold;
+    padding-top: 16px;
+}
+.card-info p {
+    font-size: 1rem;
+    line-height: 24px;
+    padding-top: 16px;
+    opacity: .6;
+}
+.featured{
+    background-color: #1A0B2E;
+}
+
+
