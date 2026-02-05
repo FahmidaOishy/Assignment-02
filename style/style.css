@@ -36,7 +36,9 @@ nav .menu a{
      font-size: 16px;
      font-weight: 500;
 }
-
+nav img {
+    display: none;
+}
 button{
     padding: 12px 16px;
     border-radius: 10000px;
@@ -61,7 +63,19 @@ button{
     border: 8px solid rgb(22, 11, 65);
 
 }
-
+.badge {
+    position: absolute;
+    top: 10px;   /* adjust to move the badge vertically */
+    right: 50px; /* adjust to move the badge horizontally */
+    background-color: #00FF90; /* neon green */
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 20px; /* makes pill shape */
+    box-shadow: 0 3px 27px 0 rgba(0,0,0,0.3);
+    z-index: 3;
+}
 .bottom {
   width: 100%;
   position: relative;
@@ -114,7 +128,8 @@ button{
     padding-bottom: 5rem;
 }
 .about .statistics {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     justify-content: space-between;
     max-width: 75rem;
 }
@@ -200,11 +215,12 @@ button{
     display: flex;
     justify-content: flex-start;
     align-items:flex-start;
-    width: 1200px;
+    width: 100%;
     gap: 30px;
 }
 .featured-card {
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
     height: 440px;
     display: flex;
     flex-direction: column;
@@ -270,6 +286,7 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
     height: 412px;
     display: flex;
     flex-direction: column;
@@ -284,8 +301,9 @@ footer h1 {
     width: 410px;
     
 }
-.social{
-    display: flex;
+footer .social{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     justify-content: center;
     align-items: center;
     height: 24px;
@@ -303,4 +321,92 @@ footer .social a {
 }
 footer p {
     opacity: 0.6;
+}
+button:hover{
+    transform: translateY(10px);
+}
+.bg-gradient:hover{
+    transition: background 5s linear 2s;
+    background: var(--Linear, linear-gradient(to left, rgb(63, 247, 88),rgb(214, 83, 175),rgb(42, 4, 68)));
+}
+h1:hover{
+    transform:rotate(360deg);
+    transition: transform 3s;
+}
+
+@media screen and ( max-width:576px) {
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px 20px;
+    }
+    nav .menu {
+      display: none;
+
+    }
+    nav button {
+    display: none;
+  }
+  nav img {
+    display: block;
+  }
+  .about .statistics {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .choose {
+    padding: 40px 20px;
+    text-align: left;
+  }
+  .choose-info{
+    height: auto;
+  }
+  .audio , .device ,.global , .interviews , .resources {
+    width: 100%;
+  }
+  .choose-card {
+  grid-template-areas:
+  "audio"
+  "device"
+  "global"
+  "interviews"
+  "resources";
+  width: 100%;
+  }
+ .choose-title{
+    font-size: 1.5rem;
+}
+.card-info{
+    padding: 30px;
+    height: auto;
+    width: 400px;
+    max-width: 100%;
+}
+.featured{
+    padding: 40px 20px;
+    
+}
+.featured .episodes {
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+   iframe {
+    width: 100%;
+  }
+  .host-title{
+    padding-top: 60px;
+}
+.host{
+    flex-direction: column;
+    text-align: center;
+}
+footer .social{
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+}
+footer p {
+    padding-top: 24px;
+}
 }
