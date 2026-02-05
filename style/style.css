@@ -16,6 +16,7 @@ header{
    
 }
 
+
 .gradient {
     background: linear-gradient(to top,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
   background-clip: text;
@@ -265,5 +266,41 @@ button{
 }
 
 footer {
-    background-image: url("../B13-A02-TechWave/assets/footer-bg.png")
+    background-image: url("../B13-A02-TechWave/assets/footer-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 412px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:34px;
+    
+}
+footer h1 {
+    font-size: 80px ;
+    font-weight: bold;
+    width: 410px;
+    
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    gap: 40px;
+}
+.platform{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+footer .social a {
+    text-decoration: none;
+    align-content: center;
+    opacity: 0.6;
+}
+footer p {
+    opacity: 0.6;
 }
